@@ -284,6 +284,19 @@ footer {
     display: flex;
 }
 
+/* Grid View */
+.grid .directory-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* List View */
+.list .directory-item {
+    display: block;
+    width: 100%;
+}
+
+
 /* Responsive Layout */
 @media(max-width: 768px) {
     .logo{

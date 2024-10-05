@@ -43,3 +43,15 @@ checkbox.addEventListener('change', function () {
         nav.style.display = 'none';
     }
 });
+
+document.getElementById('gridViewBtn').addEventListener('click', () => {
+    document.getElementById('directory-container').classList.add('grid');
+    document.getElementById('directory-container').classList.remove('list');
+});
+
+document.getElementById('listViewBtn').addEventListener('click', () => {
+    document.getElementById('directory-container').classList.add('list');
+    document.getElementById('directory-container').classList.remove('grid');
+});
+
+
