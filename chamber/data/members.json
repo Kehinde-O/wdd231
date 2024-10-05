@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Sunrise Cafe",
+        "logo": "./images/sunrise_cafe.webp",
+        "address": "101 Brew St, Cityville",
+        "phone": "(555) 123-4561",
+        "email": "info@sunrisecafe.com",
+        "url": "www.sunrisecafe.com",
+        "tagline": "Best Coffee in Town"
+    },
+    {
+        "name": "Mountain View Auto",
+        "logo": "images/mountain_view_auto.webp",
+        "address": "202 Repair Rd, Cityville",
+        "phone": "(555) 123-4562",
+        "email": "info@mvauto.com",
+        "url": "www.mvauto.com",
+        "tagline": "Your Trusted Car Service"
+    },
+    {
+        "name": "Green Valley Grocery",
+        "logo": "images/green_valley_grocery.webp",
+        "address": "303 Market Ln, Cityville",
+        "phone": "(555) 123-4563",
+        "email": "info@greenvalley.com",
+        "url": "www.greenvalleygrocery.com",
+        "tagline": "Fresh Produce, Every Day"
+    },
+    {
+        "name": "Brightside Fitness",
+        "logo": "images/bright_side_fitness.webp",
+        "address": "404 Fitness Dr, Cityville",
+        "phone": "(555) 123-4564",
+        "email": "info@brightsidefitness.com",
+        "url": "www.brightsidefitness.com",
+        "tagline": "Fitness for a Brighter Future"
+    },
+    {
+        "name": "Evergreen Landscaping",
+        "logo": "images/evergreen_landscaping.webp",
+        "address": "505 Green St, Cityville",
+        "phone": "(555) 123-4565",
+        "email": "info@evergreenlandscaping.com",
+        "url": "www.evergreenlandscaping.com",
+        "tagline": "Creating Beautiful Outdoor Spaces"
+    },
+    {
+        "name": "Silver Creek Dentistry",
+        "logo": "images/silver_creek_dentistry.webp",
+        "address": "606 Smile Rd, Cityville",
+        "phone": "(555) 123-4566",
+        "email": "info@silvercreekdentistry.com",
+        "url": "www.silvercreekdentistry.com",
+        "tagline": "Your Smile is Our Priority"
+    },
+    {
+        "name": "Tech Solutions IT",
+        "logo": "images/tech_support.webp",
+        "address": "707 Tech Blvd, Cityville",
+        "phone": "(555) 123-4567",
+        "email": "info@techsolutionsit.com",
+        "url": "www.techsolutionsit.com",
+        "tagline": "Innovative IT Solutions"
+    }
+]

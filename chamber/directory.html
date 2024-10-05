@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kehinde J Omotoso">
+    <meta name="description" content="Directory Page for Lagos Chamber of Commerce">
+    <title>Directory - Chamber of Commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="./images/favicon_io/favicon.ico">
+
+
+    <!-- Open Graph meta tags for Facebook -->
+    <meta property="og:title" content="Lagos Chamber of Commerce - Kehinde J Omotoso">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/logo.webp">
+    <meta property="og:url" content="https://example.com/directory">
+    <meta property="og:description" content="Explore local businesses and events through the Timbuktu Chamber of Commerce directory.">
+    <meta property="og:site_name" content="Lagos Chamber of Commerce - Kehinde J Omotoso">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="flex">
+                    <img src="images/logo.webp" alt="Timbuktu Logo">
+                    <div class="chamber-title-slogan">
+                        <h1>Lagos</h1>
+                        <p>Chamber of Commerce</p>
+                    </div>
+                </div>
+                <div class="hidden-desktop">
+                    <label for="menu-toggle" class="menu-btn">&#9776;</label>
+                    <input type="checkbox" id="menu-toggle">
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/lagos_chamber.jpg" alt="Hero Image" class="hero-img">
+            <button class="keynote-btn">Keynote Tickets</button>
+        </section>
+
+        <section class="info-sections-parent">
+            <h1 class="main-info-header">Home</h1>
+            <div class="info-sections">
+                <div class="section events">
+                    <h2>Events</h2>
+                    <div class="placeholder">Events Section</div>
+                </div>
+                <div class="section weather">
+                    <h2>Current Weather</h2>
+                    <div>
+                        <img class="weather-image" src="./images/weather.png" alt="Weather Icon">
+                        <div>
+                            <p><b>75°F</b></p>
+                            <p>Partly Cloudy</p>
+                            <p>High: 85°F</p>
+                            <p>Low: 52°F</p>
+                            <p>Humidity: 34%</p>
+                            <p>Sunrise: 7:30am</p>
+                            <p>Sunset: 9:59pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section forecast">
+                    <h2>Weather Forecast</h2>
+                    <div>
+                        <p>Today: <b>90°F</b></p>
+                        <p>Wednesday: <b>89°F</b></p>
+                        <p>Thursday: <b>68°F</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="directory-container">
+            <!-- Dynamic business data will be injected here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Lagos Chamber of Commerce</h3>
+                <p>10, Victoria Island</p>
+                <p>Lagos, Nigeria</p>
+                <p>Email: info@lagoschamber.org</p>
+                <p>Phone: (234) 555-2300</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>Kehinde J. Omotoso</p>
+                <p>© <span id="currentYear"></span> Lagos Chamber of Commerce</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/directory.js" defer></script>
+</body>
+
+</html>
