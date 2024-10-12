@@ -7,8 +7,10 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #eee;
+    /* background-color: #eee; */
     padding: 10px 20px;
+    background-color: #164e70;
+    color: white !important;
 }
 
 .header-content {
@@ -22,12 +24,16 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    color: white !important;
     justify-content: space-between;
 }
 
 .logo img {
     width: 50px;
     margin-right: 10px;
+    display: block;
+    /* padding: 8px; */
+    border: 5px white solid;
 }
 
 .logo h1 {
@@ -38,7 +44,7 @@ header {
 .logo p {
     margin: 0;
     font-size: 0.9rem;
-    color: #666;
+    color: white;
 }
 
 .main-nav {
@@ -59,12 +65,12 @@ header {
 
 .main-nav .nav-list li a {
     text-decoration: none;
-    color: #333;
+    color: rgb(202, 202, 202);
 }
 
 .main-nav .nav-list li a.active,
 .main-nav .nav-list li a:hover {
-    color: #007bff;
+    color: #ffffff;
 }
 
 main {
@@ -211,9 +217,12 @@ main {
 
 .business_and_name {
     display: block;
-    border-bottom: 1px black solid;
+    border-bottom: 1px rgb(39, 36, 36) solid;
     text-align: center;
     padding: 8px;
+    background-color: #164e70;
+    background-color: rgb(39, 36, 36);
+    color: #cecece;
 }
 
 .business_and_name h3 {
@@ -230,6 +239,10 @@ main {
     display: flex;
     padding: 8px;
     font-size: x-small;
+    background-color: #164d70b6;
+    background-color: rgb(71, 69, 69);
+    color: rgb(185, 185, 185);
+    line-height: 1.5;
 }
 
 .image_and_details img{
@@ -241,7 +254,7 @@ main {
 
 /* Footer Styles */
 footer {
-    background-color: #eee;
+    background-color: rgb(39, 36, 36);
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -254,6 +267,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #bcbcbc;
 }
 
 .contact-info, .project-info {
@@ -262,7 +276,7 @@ footer {
 
 .contact-info h3, .project-info p {
     margin: 5px 0;
-    color: #333;
+    color: rgb(227, 227, 227);
 }
 
 .social-icons {
