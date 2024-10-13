@@ -6,7 +6,8 @@
         "phone": "(555) 123-4561",
         "email": "info@sunrisecafe.com",
         "url": "www.sunrisecafe.com",
-        "tagline": "Best Coffee in Town"
+        "tagline": "Best Coffee in Town",
+        "membershipLevel": "gold"
     },
     {
         "name": "Mountain View Auto",
@@ -15,7 +16,8 @@
         "phone": "(555) 123-4562",
         "email": "info@mvauto.com",
         "url": "www.mvauto.com",
-        "tagline": "Your Trusted Car Service"
+        "tagline": "Your Trusted Car Service",
+        "membershipLevel": "silver"
     },
     {
         "name": "Green Valley Grocery",
@@ -24,7 +26,8 @@
         "phone": "(555) 123-4563",
         "email": "info@greenvalley.com",
         "url": "www.greenvalleygrocery.com",
-        "tagline": "Fresh Produce, Every Day"
+        "tagline": "Fresh Produce, Every Day",
+        "membershipLevel": "bronze"
     },
     {
         "name": "Brightside Fitness",
@@ -33,7 +36,8 @@
         "phone": "(555) 123-4564",
         "email": "info@brightsidefitness.com",
         "url": "www.brightsidefitness.com",
-        "tagline": "Fitness for a Brighter Future"
+        "tagline": "Fitness for a Brighter Future",
+        "membershipLevel": "gold"
     },
     {
         "name": "Evergreen Landscaping",
@@ -42,7 +46,8 @@
         "phone": "(555) 123-4565",
         "email": "info@evergreenlandscaping.com",
         "url": "www.evergreenlandscaping.com",
-        "tagline": "Creating Beautiful Outdoor Spaces"
+        "tagline": "Creating Beautiful Outdoor Spaces",
+        "membershipLevel": "silver"
     },
     {
         "name": "Silver Creek Dentistry",
@@ -51,7 +56,8 @@
         "phone": "(555) 123-4566",
         "email": "info@silvercreekdentistry.com",
         "url": "www.silvercreekdentistry.com",
-        "tagline": "Your Smile is Our Priority"
+        "tagline": "Your Smile is Our Priority",
+        "membershipLevel": "bronze"
     },
     {
         "name": "Tech Solutions IT",
@@ -60,6 +66,7 @@
         "phone": "(555) 123-4567",
         "email": "info@techsolutionsit.com",
         "url": "www.techsolutionsit.com",
-        "tagline": "Innovative IT Solutions"
+        "tagline": "Innovative IT Solutions",
+        "membershipLevel": "gold"
     }
 ]

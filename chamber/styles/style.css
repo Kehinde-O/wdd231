@@ -177,7 +177,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 00px;
+    padding: 0;
     margin-top: 20px;
 }
 
@@ -226,16 +226,16 @@ main {
 }
 
 .business_and_name h3 {
-    margin: 0px !important;
+    margin: 0 !important;
     font-weight: normal;
 }
 
 .business_and_name p {
-    margin: 0px !important;
+    margin: 0 !important;
     font-size: x-small;
 }
 
-.image_and_details{
+.image_and_details {
     display: flex;
     padding: 8px;
     font-size: x-small;
@@ -245,7 +245,7 @@ main {
     line-height: 1.5;
 }
 
-.image_and_details img{
+.image_and_details img {
     width: 80px;
     height: 80px;
     object-fit: cover;
@@ -270,11 +270,13 @@ footer {
     color: #bcbcbc;
 }
 
-.contact-info, .project-info {
+.contact-info,
+.project-info {
     text-align: left;
 }
 
-.contact-info h3, .project-info p {
+.contact-info h3,
+.project-info p {
     margin: 5px 0;
     color: rgb(227, 227, 227);
 }
@@ -294,7 +296,7 @@ footer {
     display: none;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -311,14 +313,72 @@ footer {
 }
 
 
+/* Spotlight Section Styles */
+.spotlights {
+    padding: 20px;
+    background-color: #f9f9f9;
+    background-color: rgb(39, 36, 36);
+    color: #ebebeb;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.spotlights h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#spotlights-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* For desktop view */
+    gap: 20px;
+}
+
+.spotlight-item {
+    background-color:rgb(56, 54, 54);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.spotlight-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.spotlight-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.spotlight-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.spotlight-item a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #ebebeb;
+    margin:20px auto;
+    clear: both;
+    max-width: 120px;
+    border-radius: 5px;
+}
+
+
 /* Responsive Layout */
 @media(max-width: 768px) {
-    .logo{
+    .logo {
         width: 100% !important;
     }
-    .header-content{
-        padding: 0px !important;
-        margin: 0px !important;
+    .header-content {
+        padding: 0 !important;
+        margin: 0 !important;
         display: flex;
         flex-direction: column;
         width: 100% !important;
@@ -326,7 +386,7 @@ footer {
     .info-sections {
         grid-template-columns: 1fr;
     }
-    #menu-toggle{
+    #menu-toggle {
         display: none;
     }
 
@@ -339,7 +399,8 @@ footer {
         align-items: center;
         text-align: center;
     }
-    .contact-info, .project-info {
+    .contact-info,
+    .project-info {
         text-align: center;
         margin-bottom: 20px;
     }
@@ -347,17 +408,16 @@ footer {
     .main-nav {
         display: none;
         width: 100%;
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px !important;
+        margin: 10px 0 0 !important;
+        padding: 0 !important;
     }
-    .main-nav ul{
-        padding: 0px !important;
-        margin: 0px !important;
+    .main-nav ul {
+        padding: 0 !important;
+        margin: 0 !important;
     }
-    .main-nav a{
+    .main-nav a {
         display: block;
-        margin: 0px !important;
+        margin: 0 !important;
         padding: 8px !important;
     }
     .hidden-desktop {
@@ -368,5 +428,29 @@ footer {
     }
     nav ul {
         flex-direction: column;
+    }
+
+
+    /* SPOTLIGHT */
+    #spotlights-container {
+        grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
+        gap: 15px;
+    }
+
+    .spotlight-item {
+        padding: 10px;
+    }
+
+    .spotlight-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .spotlight-item h3 {
+        font-size: 1rem;
+    }
+
+    .spotlight-item p {
+        font-size: 0.8rem;
     }
 }
