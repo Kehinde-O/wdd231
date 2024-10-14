@@ -5,23 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kehinde J Omotoso">
-    <meta name="description" content="Join Page for Lagos Chamber of Commerce">
-    <title>Join - Chamber of Commerce - Kehinde J Omotoso</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Join the Lagos Chamber of Commerce">
+    <title>Join - Lagos Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="./images/favicon_io/favicon.ico">
 
-
     <!-- Open Graph meta tags for Facebook -->
-    <meta property="og:title" content="Lagos Chamber of Commerce - Kehinde J Omotoso">
+    <meta property="og:title" content="Join - Lagos Chamber of Commerce">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://kehinde-o.github.io/wdd231/chamber/images/logo.webp">
+    <meta property="og:image" content="./images/logo.webp">
+    <meta property="og:url" content="https://example.com/join">
     <meta property="og:description"
-        content="Explore local businesses and events through the Lagos Chamber of Commerce directory.">
-    <meta property="og:site_name" content="Lagos Chamber of Commerce - Kehinde J Omotoso">
-    <meta property="og:url" content="https://kehinde-o.github.io/wdd231/chamber/directory.html">
+        content="Become a member of the Lagos Chamber of Commerce by filling out our membership form.">
+    <meta property="og:site_name" content="Lagos Chamber of Commerce">
 </head>
 
 <body>
@@ -42,9 +38,9 @@
             </div>
             <nav class="main-nav">
                 <ul class="nav-list">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
             </nav>
@@ -52,6 +48,103 @@
     </header>
 
 
+
+    <main>
+        <h1>Join the Lagos Chamber of Commerce</h1>
+
+        <form action="thankyou.html" method="get">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required>
+
+            <label for="orgTitle">Organizational Title:</label>
+            <input type="text" id="orgTitle" name="orgTitle" title="Organization Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="Email Address" placeholder="example@mail.com" autocomplete="email" required>
+
+            <label for="phone">Mobile Phone Number:</label>
+            <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" required>
+
+            <label for="organization">Organization Name:</label>
+            <input type="text" id="organization" name="organization" title="Organization Name" autocomplete="organization" required>
+
+            <label for="membershipLevel">Membership Level:</label>
+            <select id="membershipLevel" name="membershipLevel" required>
+                <option value="NP">Non-Profit (No Fee)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Organization Description:</label>
+            <textarea id="description" name="description" title="Business Description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Join the Chamber">
+        </form>
+
+        <!-- Membership Cards Section -->
+        <section id="membership-cards">
+            <div class="card" id="np-card">
+                <h2>Non-Profit Membership</h2>
+                <a href="#np-modal" onclick="openModal('np-modal')">Learn More</a>
+            </div>
+            <div class="card" id="bronze-card">
+                <h2>Bronze Membership</h2>
+                <a href="#bronze-modal" onclick="openModal('bronze-modal')">Learn More</a>
+            </div>
+            <div class="card" id="silver-card">
+                <h2>Silver Membership</h2>
+                <a href="#silver-modal" onclick="openModal('silver-modal')">Learn More</a>
+            </div>
+            <div class="card" id="gold-card">
+                <h2>Gold Membership</h2>
+                <a href="#gold-modal" onclick="openModal('gold-modal')">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Modals for Membership Levels -->
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h2>Non-Profit Membership Benefits</h2>
+                <p>No Fee.</p>
+                <p>Access to basic events and resources.</p>
+            </div>
+        </div>
+
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>Cost: $100/year.</p>
+                <p>Access to all standard events and resources.</p>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>Cost: $250/year.</p>
+                <p>Includes spotlight position on the home page and event discounts.</p>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>Cost: $500/year.</p>
+                <p>Includes spotlight position on the home page, event discounts, and premium advertising.</p>
+            </div>
+        </div>
+
+    </main>
 
 
 
@@ -78,7 +171,7 @@
         </div>
     </footer>
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </body>
 
 </html>
