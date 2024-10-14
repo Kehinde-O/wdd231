@@ -480,6 +480,10 @@ input[type="submit"]:hover {
 
 /* THANK YOU PAGE */
 
+.thank_you_title{
+    margin-top: 150px;
+}
+
 #thankyou-info{
     margin-bottom: 100px;
 }
