@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kehinde J Omotoso">
+    <meta name="description" content="Discover local businesses and attractions through the Lagos Chamber of Commerce">
+    <title>Discover - Lagos Chamber of Commerce</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./images/favicon_io/favicon.ico">
+    <!-- Preloading fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/logo.webp" alt="Lagos Chamber Logo">
+                <div class="chamber-title-slogan">
+                    <h1>Lagos</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="discover-hero">
+            <h1>Discover Lagos</h1>
+            <p>Explore local businesses, attractions, and events that define Lagos' vibrant culture.</p>
+        </section>
+
+        <!-- Sidebar Layout using CSS Grid -->
+        <section class="discover-content">
+            <aside class="sidebar">
+                <h2>Explore Lagos</h2>
+            
+                <!-- Demographics Section -->
+                <div class="sidebar-section">
+                    <h3>Demographics</h3>
+                    <p>Lagos, the largest city in Nigeria, has a population of over 14 million people, making it one of the fastest-growing cities in the world.</p>
+                </div>
+            
+                <!-- Statistical Data Section -->
+                <div class="sidebar-section">
+                    <h3>Key Statistics</h3>
+                    <ul>
+                        <li>Population: 14+ million</li>
+                        <li>GDP: $91 billion</li>
+                        <li>Major Industries: Finance, Manufacturing, Trade</li>
+                    </ul>
+                </div>
+            
+                <!-- Events Section -->
+                <div class="sidebar-section">
+                    <h3>Upcoming Events</h3>
+                    <ul>
+                        <li>Business Summit - Oct 25, 2024</li>
+                        <li>Lagos Trade Fair - Nov 5-14, 2024</li>
+                        <li>Art & Culture Expo - Dec 12, 2024</li>
+                    </ul>
+                </div>
+            
+                <!-- Attractions Section -->
+                <div class="sidebar-section">
+                    <h3>Top Attractions</h3>
+                    <ul>
+                        <li>Victoria Island</li>
+                        <li>Lekki Conservation Centre</li>
+                        <li>Lagos National Museum</li>
+                    </ul>
+                </div>
+            
+                
+            </aside>
+            
+
+            <div class="main-content">
+                <section id="businesses">
+                    <h2>Top Businesses</h2>
+                    <div class="business-grid">
+                        <div class="business-item">
+                            <img src="images/terra_kulture.jpg" alt="Terra Kulture" loading="lazy">
+                            <h3>Terra Kulture</h3>
+                        </div>
+                        <div class="business-item">
+                            <img src="images/nike_art_gallery.jpg" alt="Nike Art Gallery" loading="lazy">
+                            <h3>Nike Art Gallery</h3>
+                        </div>
+                        <div class="business-item">
+                            <img src="images/yellow_chilli.png" alt="Yello Chilli Restuarant" loading="lazy">
+                            <h3>The Yellow Chilli Restaurant</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="attractions">
+                    <h2>Popular Attractions</h2>
+                    <div class="attraction-grid">
+                        <div class="attraction-item">
+                            <img src="images/lekki_conservation_center.jpg" alt="Lekki Conservation Centre" loading="lazy">
+                            <h3>Lekki Conservation Centre</h3>
+                        </div>
+                        <div class="attraction-item">
+                            <img src="images/tarkwa_bay.jpg" alt="Tarkwa Bay Beach" loading="lazy">
+                            <h3>Tarkwa Bay Beach</h3>
+                        </div>
+                        <div class="attraction-item">
+                            <img src="images/freedom_park.jpg" alt="Freedom Park" loading="lazy">
+                            <h3>Freedom Park</h3>
+                        </div>
+                    </div>
+                </section>
+
+            
+            </div>
+        </section>
+
+        <!-- Last Visit Message -->
+        <section class="visit-message">
+            <p id="visitMessage">Welcome back!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info">
+                <h3>Lagos Chamber of Commerce</h3>
+                <p>10, Victoria Island, Lagos, Nigeria</p>
+                <p>Email: info@lagoschamber.org</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+                <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project by Kehinde J. Omotoso</p>
+                <p>© <span id="currentYear"></span> Lagos Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/discover.js" defer></script>
+</body>
+</html>

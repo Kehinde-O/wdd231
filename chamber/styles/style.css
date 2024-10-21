@@ -512,6 +512,130 @@ input[type="submit"]:hover {
 }
 
 
+/* Discover CSS  */
+
+/* Hero Section */
+.discover-hero {
+    background-color: #003d66;  /* Darker background for better contrast */
+    color: white;  /* High contrast between text and background */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.discover-hero h1 {
+    font-size: 2.5rem;
+}
+
+/* Grid Layout */
+.discover-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;  /* Light background for contrast */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #004d80;  /* Dark sidebar for contrast */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.sidebar h2, .sidebar h3 {
+    color: #ffcc00; /* High-contrast section headings */
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.sidebar-section ul li {
+    margin-bottom: 5px;
+    color: #ffffff; /* Light text for readability */
+}
+
+.sidebar-section p {
+    color: #ffffff;
+}
+
+
+/* Hover Effects for Links */
+.sidebar-section ul li:hover {
+    color: #ffe680;  /* Slightly lighter on hover for contrast */
+}
+
+
+
+
+
+
+.business-grid, .attraction-grid, .event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.business-item, .attraction-item, .event-item {
+    background-color: #ffffff;  /* White background for contrast */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.business-item:hover, .attraction-item:hover, .event-item:hover {
+    transform: scale(1.05);
+    background-color: #e6f2ff;  /* Light blue hover effect for contrast */
+}
+
+.business-item h3, .attraction-item h3, .event-item h3 {
+    color: #003d66;  /* Darker text color for contrast */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Visit Message */
+.visit-message {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #003d66;  /* Darker text for contrast */
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(39, 36, 36);  /* Dark background for contrast */
+    padding: 20px;
+    text-align: center;
+    color: #bcbcbc;  /* Light text for contrast */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+
 
 /* Responsive Layout */
 @media(max-width: 768px) {
@@ -602,5 +726,13 @@ input[type="submit"]:hover {
     }
     #membership-cards {
         flex-direction: column;
+    }
+
+    .discover-content {
+        grid-template-columns: 1fr;
+    }
+
+    .business-grid, .attraction-grid, .event-grid {
+        grid-template-columns: 1fr;
     }
 }
