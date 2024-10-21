@@ -21,18 +21,58 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// Storing Last Visit Date in localStorage
-const visitMessage = document.getElementById('visitMessage');
-const lastVisit = localStorage.getItem('lastVisit');
-const currentDate = new Date().toLocaleDateString();
 
-if (lastVisit) {
-    visitMessage.textContent = `Welcome back! Your last visit was on ${lastVisit}`;
-} else {
-    visitMessage.textContent = "Welcome to the Discover page!";
-}
 
-localStorage.setItem('lastVisit', currentDate);
+document.addEventListener("DOMContentLoaded", function() {
+    const visitMessage = document.getElementById('visitMessage'); // Assuming you have a <p> with id="visitMessage"
+    
+    // Get current time and last visit time from localStorage
+    const currentVisit = new Date().getTime();
+    const lastVisit = localStorage.getItem('lastVisitTime');
+
+    // Store the current visit time in localStorage for future visits
+    localStorage.setItem('lastVisitTime', currentVisit);
+
+    // If this is the first visit
+    if (!lastVisit) {
+        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+        return;
+    }
+
+    // Calculate the difference in time (in milliseconds)
+    const timeDifference = currentVisit - parseInt(lastVisit);
+    const oneDay = 24 * 60 * 60 * 1000; // One day in milliseconds
+
+    // If less than a day has passed
+    if (timeDifference < oneDay) {
+        visitMessage.textContent = "Back so soon! Awesome!";
+    } else {
+        // Calculate the number of days
+        const daysBetween = Math.floor(timeDifference / oneDay);
+
+        // If the difference is exactly 1 day
+        if (daysBetween === 1) {
+            visitMessage.textContent = "You last visited 1 day ago.";
+        } else {
+            visitMessage.textContent = `You last visited ${daysBetween} days ago.`;
+        }
+    }
+});
+
+
+
+// // Storing Last Visit Date in localStorage
+// const visitMessage = document.getElementById('visitMessage');
+// const lastVisit = localStorage.getItem('lastVisit');
+// const currentDate = new Date().toLocaleDateString();
+
+// if (lastVisit) {
+//     visitMessage.textContent = `Welcome back! Your last visit was on ${lastVisit}`;
+// } else {
+//     visitMessage.textContent = "Welcome to the Discover page!";
+// }
+
+// localStorage.setItem('lastVisit', currentDate);
 
 // Footer dynamic content
 document.getElementById('currentYear').textContent = new Date().getFullYear();
