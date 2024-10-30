@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Cooking Hub - Submit a Recipe</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Submit Your Recipe</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="tips.html">Automation Tips</a></li>
+                <li><a href="gadgets.html">Smart Gadgets</a></li>
+                <li><a href="submit.html">Submit a Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <h2>Share Your Favorite Recipe with Us</h2>
+        <p>Fill out the form below to submit your recipe. Make sure to include all necessary details so others can enjoy it too!</p>
+        <form id="recipeForm">
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" placeholder="Enter recipe name" required>
+
+            <label for="recipeDescription">Description:</label>
+            <textarea id="recipeDescription" placeholder="Briefly describe your recipe" required></textarea>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" placeholder="List ingredients separated by commas" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" placeholder="Step-by-step instructions" required></textarea>
+
+            <label for="recipeImage">Upload an Image:</label>
+            <input type="file" id="recipeImage" accept="image/*">
+
+            <button type="submit">Submit Recipe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Kehinde John Omotoso</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

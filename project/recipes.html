@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Cooking Hub - Recipes</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="tips.html">Automation Tips</a></li>
+                <li><a href="gadgets.html">Smart Gadgets</a></li>
+                <li><a href="submit.html">Submit a Recipe</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="recipes">
+        <h2>Delicious Recipes for Every Occasion</h2>
+        <p>Browse our extensive collection of recipes, from quick meals to gourmet dishes.</p>
+        <div class="recipe-grid">
+            <!-- Recipes loaded dynamically from API or local data -->
+        </div>
+    </section>
+
+    <section class="recipe-category">
+        <h3>Filter by Category</h3>
+        <button class="category-button" onclick="filterRecipes('Quick Meals')">Quick Meals</button>
+        <button class="category-button" onclick="filterRecipes('Vegan')">Vegan</button>
+        <button class="category-button" onclick="filterRecipes('Desserts')">Desserts</button>
+        <button class="category-button" onclick="filterRecipes('Gourmet')">Gourmet</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Kehinde John Omotoso</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
